@@ -5,15 +5,15 @@ public class TryCatch {
 		try {
 			return a + b;
 		} catch (Exception e) {
-			System.out.println("catch Óï¾ä¿é");
+			System.out.println("catch è¯­å¥å—");
 		} finally {
-			System.out.println("finally Óï¾ä¿é");
+			System.out.println("finally è¯­å¥å—");
 		}
 		return 0;
 	}
 
 	public static void main(String argv[]) {
 		TryCatch test = new TryCatch();
-		System.out.println("ºÍÊÇ£º " + test.add(9, 34));
+		System.out.println("å’Œæ˜¯ï¼š " + test.add(9, 34));
 	}
 }

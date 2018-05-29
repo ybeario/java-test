@@ -21,17 +21,17 @@ public class MainChuan {
 		List<String> list = new ArrayList<String>();
 
 		String temp = "";
-		// len/2 ¿ÉÒÔÉú³ÉµÄ×Ó´®×î´ó³¤¶È
+		// len/2 å¯ä»¥ç”Ÿæˆçš„å­ä¸²æœ€å¤§é•¿åº¦
 		for (int i = 1; i <= len / 2; i++) {
 			if (len % i == 0) {
-				// È¡×Ó´®
+				// å–å­ä¸²
 				String tem = str.substring(0, i);
 				StringBuffer sb = new StringBuffer();
 				for (int j = 0; j < len / i; j++) {
-					// Ñ­»·Éú³É×îÖÕ×Ö·û´®str
+					// å¾ªç¯ç”Ÿæˆæœ€ç»ˆå­—ç¬¦ä¸²str
 					sb = sb.append(tem);
 				}
-				// ÑéÖ¤
+				// éªŒè¯
 				if (sb.toString().equals(str))
 					list.add(tem);
 			}

@@ -15,8 +15,8 @@ public class CASCounter {
 		long start = System.currentTimeMillis();
 		for (int i = 0; i < 100; i++) {
 			Thread thread = new Thread(() -> {
-				cas.count();//ÓĞ¿ÉÄÜ³öÏÖÖµ²»Îª100µÄÇé¿ö   Ïß³Ì²»°²È«
-				cas.safeCount();//Ïß³Ì°²È«  Ê¼ÖÕÎª100
+				cas.count();//æœ‰å¯èƒ½å‡ºç°å€¼ä¸ä¸º100çš„æƒ…å†µ   çº¿ç¨‹ä¸å®‰å…¨
+				cas.safeCount();//çº¿ç¨‹å®‰å…¨  å§‹ç»ˆä¸º100
 			});
 			threads.add(thread);
 		}

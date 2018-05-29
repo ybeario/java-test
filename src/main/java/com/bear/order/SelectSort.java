@@ -11,16 +11,16 @@ public class SelectSort {
 
 	public static int[] sort(int[] nums) {
 
-		for (int i = 0; i < nums.length; i++) {		//Íâ²ã¿ØÖÆ£¬Ã¿´ÎÑ­»·¼õÉÙÇ°ÃæĞèÒªÑ­»·µÄ¸öÊı
-			int pos = i;							//¼ÙÉèµÚÒ»¸öÎ»ÖÃ×îĞ¡
+		for (int i = 0; i < nums.length; i++) {		//å¤–å±‚æ§åˆ¶ï¼Œæ¯æ¬¡å¾ªç¯å‡å°‘å‰é¢éœ€è¦å¾ªç¯çš„ä¸ªæ•°
+			int pos = i;							//å‡è®¾ç¬¬ä¸€ä¸ªä½ç½®æœ€å°
 			int min = nums[i];
-			for (int j = i; j < nums.length - 1; j++) { 	//±éÀúËùÓĞÊıÖµ£¬»ñÈ¡×îĞ¡Öµ
+			for (int j = i; j < nums.length - 1; j++) { 	//éå†æ‰€æœ‰æ•°å€¼ï¼Œè·å–æœ€å°å€¼
 				if (min> nums[j + 1]) {
 					pos = j + 1;
 					min = nums[pos];
 				}
 			}
-			nums[pos] = nums[i];		//½«µÚN´ÎÕÒ³öµÄ×îĞ¡ÖµËùÔÚÎ»ÖÃÓëÊı×éÖĞµÄµÚN¸öÊı½øĞĞÎ»ÖÃ½»»»
+			nums[pos] = nums[i];		//å°†ç¬¬Næ¬¡æ‰¾å‡ºçš„æœ€å°å€¼æ‰€åœ¨ä½ç½®ä¸æ•°ç»„ä¸­çš„ç¬¬Nä¸ªæ•°è¿›è¡Œä½ç½®äº¤æ¢
 			nums[i] = min;
 		}
 		return nums;

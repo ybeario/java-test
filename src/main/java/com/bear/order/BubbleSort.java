@@ -10,8 +10,8 @@ public class BubbleSort {
 	}
 	
 	public static void sort(int[] nums) {
-		int temp=0;										//tempµÄ×÷ÓÃÖ»ÊÇÒ»¸öÖĞ¼ä±äÁ¿£¬ÁÙÊ±±£´æÖµ£¬²»²ÎÓë±È½Ï
-		for (int i=nums.length-1; i >0; i--) {			//¿ØÖÆÍâ²ãÑ­»·
+		int temp=0;										//tempçš„ä½œç”¨åªæ˜¯ä¸€ä¸ªä¸­é—´å˜é‡ï¼Œä¸´æ—¶ä¿å­˜å€¼ï¼Œä¸å‚ä¸æ¯”è¾ƒ
+		for (int i=nums.length-1; i >0; i--) {			//æ§åˆ¶å¤–å±‚å¾ªç¯
 			for (int j = 0; j<i; j++) {
 				if (nums[j]>nums[j+1]) {
 					temp=nums[j];
