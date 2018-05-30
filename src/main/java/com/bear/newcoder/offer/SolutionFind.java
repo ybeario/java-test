@@ -2,15 +2,15 @@ package com.bear.newcoder.offer;
 
 public class SolutionFind {
 	public boolean Find(int target, int[][] array) {
-		int length = array.length - 1; //ºáÏò³¤¶È
-		int i = 0;						//×İÏò³¤¶È
-		while (length >= 0 && i < array[0].length) {   //±£Ö¤±ß½ç°²È«
-			if (target < array[length][i]) {			//ÓÒÉÏ½Ç¿ªÊ¼
+		int length = array.length - 1; //æ¨ªå‘é•¿åº¦
+		int i = 0;						//çºµå‘é•¿åº¦
+		while (length >= 0 && i < array[0].length) {   //ä¿è¯è¾¹ç•Œå®‰å…¨
+			if (target < array[length][i]) {			//å³ä¸Šè§’å¼€å§‹
 				length--;
 			} else if (target > array[length][i]) {
 				i++;
 			} else {
-				return true;							//±ß½çÄÚ£¬È´²»Âú×ãÇ°Á½¸öÌõ¼ş£¬±íÃ÷target == array[length][i]
+				return true;							//è¾¹ç•Œå†…ï¼Œå´ä¸æ»¡è¶³å‰ä¸¤ä¸ªæ¡ä»¶ï¼Œè¡¨æ˜target == array[length][i]
 			}
 		}
 		return false;

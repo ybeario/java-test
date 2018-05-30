@@ -7,10 +7,10 @@ import java.util.concurrent.FutureTask;
 public class CallableExample {
 	public static void main(String[] args) {
 		Callable<String> callable=new MyThread("094", "17555470");
-		FutureTask<String> future=new FutureTask<>(callable);    //FutureTask实现了Runnable接口
+		FutureTask<String> future=new FutureTask<>(callable);    
 		new Thread(future).start();
 		try {
-			String result=future.get();			//获取返回值ֵ
+			String result=future.get();			
 			System.out.println(result);
 		} catch (InterruptedException | ExecutionException e) {
 			// TODO Auto-generated catch block

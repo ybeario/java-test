@@ -2,8 +2,8 @@ package com.bear.newcoder.offer;
 
 public class SolutionReplaceSpace {
 	public String replaceSpace(StringBuffer str) {
-		StringBuffer buffer = new StringBuffer();		//复制到新的buffer当中
-		int index = 0;									//下标
+		StringBuffer buffer = new StringBuffer();		//澶嶅埗鍒版柊鐨刡uffer褰撲腑
+		int index = 0;									//涓嬫爣
 		while (index < str.length()) {
 			if (str.charAt(index) == ' ') {
 				buffer.append('%');
