@@ -7,7 +7,7 @@ package com.bear.offer.array;
  *  一只青蛙一次可以跳上1级台阶，也可以跳上2级。求该青蛙跳上一个n级的台阶总共有多少种跳法。
  */
 public class JumpFloor {
-    public int FrogJumpFloor(int target) {
+    public int frogJumpFloor(int target) {
         if (target==0) {
 			return 0;
 		}else if (target==1) {

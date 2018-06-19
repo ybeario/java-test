@@ -14,7 +14,7 @@ public class JumpFloorII {
 	 * @param target
 	 * @return
 	 */
-	public int FrogJumpFloorII(int target) {
+	public int frogJumpFloorII(int target) {
 		if (target == 0) {
 			return 0;
 		}
