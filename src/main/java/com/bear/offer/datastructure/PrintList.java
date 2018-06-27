@@ -1,8 +1,9 @@
 package com.bear.offer.datastructure;
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Stack;
+
+import com.bear.offer.ListNode;
 /*
  * 输入一个链表，从尾到头打印链表每个节点的值。
  */
@@ -32,11 +33,4 @@ public class PrintList {
 	}
 }
 
-class ListNode {
-	int val;
-	ListNode next = null;
 
-	ListNode(int val) {
-		this.val = val;
-	}
-}

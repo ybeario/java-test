@@ -1,13 +1,6 @@
 package com.bear.offer.datastructure;
 
-class ListNode {
-	int val;
-	ListNode next = null;
-
-	ListNode(int val) {
-		this.val = val;
-	}
-}
+import com.bear.offer.ListNode;
 
 /**
  * 

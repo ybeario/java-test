@@ -3,14 +3,8 @@ package com.bear.offer.datastructure;
 import java.util.ArrayList;
 import java.util.List;
 
-class ListNode {
-	int val;
-	ListNode next = null;
+import com.bear.offer.ListNode;
 
-	ListNode(int val) {
-		this.val = val;
-	}
-}
 
 /**
  * 

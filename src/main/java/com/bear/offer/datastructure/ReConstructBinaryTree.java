@@ -1,5 +1,7 @@
 package com.bear.offer.datastructure;
 
+import com.bear.offer.TreeNode;
+
 /**
  * 
  * 2018年6月13日
@@ -50,12 +52,3 @@ public class ReConstructBinaryTree {
 	}
 }
 
-class TreeNode {
-	int val;
-	TreeNode left;
-	TreeNode right;
-
-	TreeNode(int x) {
-		val = x;
-	}
-}
