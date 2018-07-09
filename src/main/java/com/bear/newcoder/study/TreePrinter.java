@@ -23,7 +23,7 @@ public class TreePrinter {
 		queue.offer(root);
 		while (!queue.isEmpty()) {
 			ArrayList<TreeNode> nodes = new ArrayList<>();
-			for (int i = queue.size(); i > 0; i--) {
+			for (int i = queue.size(); i > 0; i--) {		//循环条件必须如此，因为queue.size()会变化
 				temp = queue.poll();
 				nodes.add(temp);
 				if (temp.left != null) {

@@ -56,6 +56,23 @@ public class ReOrderArray {
 			}
 		}
 	}
+	/**
+	 * 
+	 * @param array
+	 * 利用冒泡的方式，把偶数放到最后
+	 */
+    public void reOrderArray2(int [] array) {
+        int temp=0;
+        for(int i=0;i<array.length-1;i++){
+            for(int j=0;j<array.length-1-i;j++){
+                if(array[j]%2==0&&array[j+1]%2==1){
+                    temp=array[j+1];
+                    array[j+1]=array[j];
+                    array[j]=temp;
+                }
+            }
+        }
+    }
 	public static void main(String[] args) {
 		int[] testArray= {1,2,3,4,5,6,7};
 		reOrderArray(testArray);
