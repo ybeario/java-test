@@ -42,7 +42,7 @@ public class FairAndUnfair {
 
 		@Override
 		public void run() {
-			for (int i = 0; i < 200000; i++) {
+			for (int i = 0; i < 200; i++) {
 				lock.lock();
 				System.out.println(Thread.currentThread().getName() + ","
 						+ Arrays.toString(((ReentrantLock2) lock).getQueuedThreads().toArray()));

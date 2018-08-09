@@ -1,4 +1,4 @@
-package com.bear.concurrency;
+package com.bear.concurrency.waitNotify;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -44,21 +44,35 @@ public class WaitNotify {
 				lock.notifyAll();
 				flag=false;
 				try {
-					Thread.sleep(5000);
+					Thread.sleep(2000);
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
 			}
-			
 			synchronized (lock) {
 				System.out.println(Thread.currentThread()+"hold lock again. sleep @"+new SimpleDateFormat("HH:mm:ss").format(new Date()));
 				try {
-					Thread.sleep(5000);
+					Thread.sleep(2000);
 				} catch (InterruptedException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
+			}
+			synchronized (lock) {
+				System.out.println("again");
+			}
+			synchronized (lock) {
+				System.out.println("again");
+			}
+			synchronized (lock) {
+				System.out.println("again");
+			}
+			synchronized (lock) {
+				System.out.println("again");
+			}
+			synchronized (lock) {
+				System.out.println("again");
 			}
 		}
 		
