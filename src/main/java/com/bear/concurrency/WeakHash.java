@@ -1,12 +1,11 @@
 package com.bear.concurrency;
 
-import java.util.HashMap;
 import java.util.Iterator;
 import java.util.WeakHashMap;
 
 public class WeakHash {
-	public static void main(String[] args) {
-		HashMap<String, Object> wmap = new HashMap<String, Object>();
+	public static void main(String[] args) throws InterruptedException {
+		WeakHashMap<String, Object> wmap = new WeakHashMap<String, Object>();
 		final int SIZE = 10;
 		String[] str = new String[SIZE];
 		for (int i = 0; i < SIZE; i++) {

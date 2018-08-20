@@ -16,13 +16,22 @@ public class ThreadLocalExample {
 }
 
 class MyThread implements Runnable {
+	public static int add(int num) {
+		if (num==0) {
+			return 0;
+		}
+		if (num==1) {
+			return 1;
+		}
+	return add(num-1)+add(num-2);
+	}
 
 	@Override
 	public void run() {
 		// TODO Auto-generated method stub
 		ThreadLocalExample.local.set(0);
 		int num =ThreadLocalExample.local.get();
-		num++;
+		num=add(40);
 		ThreadLocalExample.local.set(num);
 		System.out.println(ThreadLocalExample.local.get());
 	}
