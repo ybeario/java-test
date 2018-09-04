@@ -1,4 +1,4 @@
-package com.bear.interview;
+package com.bear.newcoder.huawei;
 
 import java.io.BufferedReader;
 import java.io.IOException;
