@@ -1,4 +1,4 @@
-package com.bear.concurrency;
+package com.bear.concurrency.threadlocal;
 
 public class ThreadLocalExample {
 	public static final ThreadLocal<Integer> local = new ThreadLocal<>();
