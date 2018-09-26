@@ -39,7 +39,7 @@ public class Piped {
 					System.out.print((char)receive);
 				}
 			} catch (IOException e) {
-				// TODO Auto-generated catch block
+				
 				e.printStackTrace();
 			}
 		}
@@ -63,14 +63,14 @@ public class Piped {
 					out.write(receive);
 }
 				} catch (IOException e) {
-					// TODO Auto-generated catch block
+					
 					e.printStackTrace();
 				}
 			}finally {
 				try {
 					out.close();
 				} catch (IOException e) {
-					// TODO Auto-generated catch block
+					
 					e.printStackTrace();
 				}
 			}

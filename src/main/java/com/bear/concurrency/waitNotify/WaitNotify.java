@@ -25,7 +25,7 @@ public class WaitNotify {
 						System.out.println(Thread.currentThread()+"flag is true. wait@"+new SimpleDateFormat("HH:mm:ss").format(new Date()));
 						lock.wait();
 					} catch (InterruptedException e) {
-						// TODO Auto-generated catch block
+						
 						e.printStackTrace();
 					}
 				}
@@ -46,7 +46,7 @@ public class WaitNotify {
 				try {
 					Thread.sleep(2000);
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
+					
 					e.printStackTrace();
 				}
 			}
@@ -55,7 +55,7 @@ public class WaitNotify {
 				try {
 					Thread.sleep(2000);
 				} catch (InterruptedException e) {
-					// TODO Auto-generated catch block
+					
 					e.printStackTrace();
 				}
 			}

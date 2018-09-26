@@ -26,7 +26,7 @@ public class Singleton {
 			try {
 				countDownLatch.await();
 			} catch (InterruptedException e) {
-				// TODO Auto-generated catch block
+				
 				e.printStackTrace();
 			}
 			System.out.println(Thread.currentThread().getName()+":  "+getInstance());

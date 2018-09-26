@@ -28,7 +28,7 @@ class MyThread implements Runnable {
 
 	@Override
 	public void run() {
-		// TODO Auto-generated method stub
+		
 		ThreadLocalExample.local.set(0);
 		int num =ThreadLocalExample.local.get();
 		num=add(40);

@@ -19,7 +19,7 @@ public class SimpleDateFormatTest {
 						System.out.println(format.parse(dateTime));
 						latch.countDown();
 					} catch (ParseException e) {
-						// TODO Auto-generated catch block
+						
 						e.printStackTrace();
 					}
 				}

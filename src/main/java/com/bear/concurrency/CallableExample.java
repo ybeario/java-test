@@ -13,7 +13,7 @@ public class CallableExample {
 			String result=future.get();			
 			System.out.println(result);
 		} catch (InterruptedException | ExecutionException e) {
-			// TODO Auto-generated catch block
+			
 			e.printStackTrace();
 		}
 		
